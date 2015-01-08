@@ -7,7 +7,8 @@
 console.log("script");
 
 $("document").ready(function() {
-    $(".whatever").css("background-color", "yellow");
+    $(".whatever").css("background-color", "blue");
+     
 });
 
 
