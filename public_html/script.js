@@ -7,8 +7,6 @@
 console.log("script");
 
 $("document").ready(function() {
-    $(".whatever").css("background-color", "blue");
-     
+    $(".whatever").css("background-color", "green");
+    $(".sibling").css("background-color", "blue");
 });
-
-
