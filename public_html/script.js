@@ -11,7 +11,22 @@ $("document").ready(function() {
     $('#onebutton').bind('click', alertButtonClick);
             
     $('.whatever').bind('mouseover', mouseoverme).bind('mouseout', "mouseoutme");
+    
+    $('#show').css('visibility', 'hidden');
+    
+    $('#hide').bind('click', hideThePage);
+    $('#show').bind('click', showThePage); 
 });
+
+function hideThePage() {
+    $('div').hide('slide', {},  2500);
+    $('#hide').css('visibiliy','visible');
+    $('div').show('fold', {},  2500);
+}
+function showThePage() {
+     $('div').show('fold', {},  2500);
+     $('#show').hide('puff',{}, 2500);
+}
 
 function alertButtonClick() {
     alert("there was a button clicked");
