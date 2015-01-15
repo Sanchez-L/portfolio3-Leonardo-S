@@ -5,7 +5,7 @@
  */
 
 $("document").ready(function() {
-    $(".whatever").css("background-color", "green");
+    $(".whatever").css("background-color", "yellow");
     $(".sibling").css("background-color", "blue");
     
     $('#onebutton').bind('click', alertButtonClick);
@@ -15,11 +15,15 @@ $("document").ready(function() {
     $('#show').css('visibility', 'hidden');
     
     $('#hide').bind('click', hideThePage);
+    
     $('#show').bind('click', showThePage); 
+    
+    $('#superHumans').accordion({header: "h4"});
+ 
 });
 
 function hideThePage() {
-    $('div').hide('slide', {},  2500);
+    $('div').hide('flip', {},  2500);
     $('#hide').css('visibiliy','visible');
     $('div').show('fold', {},  2500);
 }
@@ -29,7 +33,7 @@ function showThePage() {
 }
 
 function alertButtonClick() {
-    alert("there was a button clicked");
+    alert("you clicked my button");
 }
 
 function mouseoverme() {
