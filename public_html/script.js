@@ -20,10 +20,11 @@ $("document").ready(function() {
     
     $('#superHumans').accordion({header: "h4"});
  
+    $('#superHumans2').accordion({header: "h3"});
 });
 
 function hideThePage() {
-    $('div').hide('flip', {},  2500);
+    $('div').hide('slide', {},  2500);
     $('#hide').css('visibiliy','visible');
     $('div').show('fold', {},  2500);
 }

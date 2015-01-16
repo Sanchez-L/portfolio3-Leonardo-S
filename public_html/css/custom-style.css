@@ -1,0 +1,48 @@
+div{
+   border-style:hidden;
+   border-width:10px;
+   padding:30px;
+   border-color:darkblue;
+}
+.container{
+    border-color:darkblue;
+}
+
+.row{
+    border-color:darkblue;
+}
+
+body{
+    background-color:grey;
+    
+}
+
+nav a {
+    color:darkblue;
+    padding:100px;
+    font-size:17px
+        
+}
+
+p a{
+    font-size: 40px;
+    color: darkblue
+}
+
+p {
+     font-size:15px;
+ }
+ 
+ h1 {
+    font-size:50px;
+    padding-left:300px;
+    border-style:solid;
+    
+    
+ }
+ 
+ jumbotron {
+     text-align: center;
+     background-color: turquoise; 
+     
+ }
