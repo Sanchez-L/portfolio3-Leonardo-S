@@ -5,23 +5,26 @@
  */
 
 $("document").ready(function() {
-    $(".whatever").css("background-color", "yellow");
-    $(".sibling").css("background-color", "blue");
+    
+    $('.jumbotron').css('background',' url('+image_url') no-repeat center center');
     
     $('#onebutton').bind('click', alertButtonClick);
             
-    $('.whatever').bind('mouseover', mouseoverme).bind('mouseout', "mouseoutme");
-    
     $('#show').css('visibility', 'hidden');
     
     $('#hide').bind('click', hideThePage);
     
     $('#show').bind('click', showThePage); 
     
-    $('#superHumans').accordion({header: "h4"});
+    $('#superHumans').accordion({header: "button"});
  
-    $('#superHumans2').accordion({header: "h3"});
+    $('#superHumans2').accordion({header: "button"});
+    
+    $("body").css("background-image","url(http://www.metalinjection.net/wp-content/uploads/2014/07/space-metal.jpg )");   
+    
+   
 });
+
 
 function hideThePage() {
     $('div').hide('slide', {},  2500);
@@ -39,8 +42,11 @@ function alertButtonClick() {
 
 function mouseoverme() {
     $("#second").html("no touching");
+    $('div').hide('flip', {},  2500);
+
 }
 
 function mouseoutme(){
     $("#second").html("cant you read i said dont touch that");
+    $('div').show('flip', {},  2500);
 }
