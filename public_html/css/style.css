@@ -1,5 +1,4 @@
-/*  comment */
-
+/*helps design my jumbotron  */
 .jumbotron {
     background-image: url(http://www.metalinjection.net/wp-content/uploads/2014/07/space-metal.jpg );
     background-size: cover;
@@ -7,6 +6,16 @@
     width: auto;
     text-align: center;
 }
-
-
-
+/*this helps control the about me*/
+ h2 {
+    font-size:50px;
+    padding-left:400px;
+    border-bottom-style: solid;
+ }
+ /*this code helps me design my calender*/
+ P {
+     padding-left: 800px;
+ }
+ accordion {
+     background-color: grey;
+ }
