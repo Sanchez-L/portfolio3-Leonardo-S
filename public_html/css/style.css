@@ -5,17 +5,20 @@
     height: 500px;
     width: auto;
     text-align: center;
+    text-decoration-color: black;
 }
 /*this helps control the about me*/
- h2 {
+h2 {
     font-size:50px;
     padding-left:400px;
     border-bottom-style: solid;
- }
- /*this code helps me design my calender*/
- P {
-     padding-left: 800px;
- }
- accordion {
-     background-color: grey;
- }
+    color:black;
+}
+/*this code helps me design my calender*/
+P {
+    padding-left: 800px;
+}
+/*this helps design my accordion*/
+.accordion {
+    background-color: grey;
+}
